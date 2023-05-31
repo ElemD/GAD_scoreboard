@@ -12,6 +12,17 @@ function downRound() {
   document.getElementById("round").textContent = value;
   title();
 }
+function incrPoint(elementid) {
+  value = parseInt(document.getElementById(elementid).textContent);
+  value++;
+  document.getElementById(elementid).textContent = value;
+}
+function decrPoint(elementid) {
+  value = parseInt(document.getElementById(elementid).textContent);
+  value--;
+  document.getElementById(elementid).textContent = value;
+}
+
 
 function title(){
     document.getElementById("round").textContent = value;
@@ -20,16 +31,22 @@ function title(){
             document.getElementById("title").textContent = "SUPERNOVA";
           break;
         case 2:
-            document.getElementById("title").textContent = "BUZZER";
+            document.getElementById("title").textContent = "RAPID FIRE";
           break;
         case 3:
-            document.getElementById("title").textContent = "WORD PROBLEM";
+            document.getElementById("title").textContent = "SUDOKU";
           break;
         case 4:
-            document.getElementById("title").textContent = "RAPID FIRE";
+            document.getElementById("title").textContent = "WORD PROBLEM";
           break;
         case 5:
             document.getElementById("title").textContent = "VISUAL ROUND";
+          break;
+        case 6:
+            document.getElementById("title").textContent = "PROBLEM SOLVING";
+          break;
+        case 7:
+            document.getElementById("title").textContent = "BUZZER";
           break;
         default:
             document.getElementById("title").textContent = " ";
